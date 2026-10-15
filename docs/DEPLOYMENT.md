@@ -52,7 +52,7 @@ npx vercel deploy
 npx vercel deploy --prod
 ```
 
-Link the repository through Vercel's Git settings to enable builds from future pushes. A CLI deployment alone does not imply that Git integration has been configured.
+The project is connected to `blackice2090/OncoPredictNexus` through Vercel's Git integration. Pushes to `main` trigger production builds. Preview branches retain the project's deployment protection.
 
 ## Acceptance checks
 
