@@ -26,3 +26,7 @@ work/
 
 .vercel
 .env*
+
+# Required application entry and non-secret configuration template
+!app/research_predictor/frontend/index.html
+!.env.example
