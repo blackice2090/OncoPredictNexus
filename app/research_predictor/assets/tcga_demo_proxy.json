@@ -1,0 +1,111 @@
+{
+  "id": "TCGA-95-7039-01",
+  "study_id": "luad_tcga_pub",
+  "study_name": "Lung Adenocarcinoma (TCGA, Nature 2014)",
+  "commit": "86690e1ed9752b1dcd50b5657f5f05eafa4b6b78",
+  "retrieved_at_utc": "2026-10-13T07:58:16.691419+00:00",
+  "role": "public_reported_mutation_demo_only",
+  "selection_policy": "All three required genes have non-silent reported calls; sequenced/WXS membership; unambiguous supported EGFR Other mapping; no predictions or treatment outcomes used.",
+  "profile": {
+    "egfr_mutated": true,
+    "tp53_mutated": true,
+    "kras_mutated": true,
+    "egfr_variants": [
+      "Other_EGFR"
+    ]
+  },
+  "gene_panel": "WXS",
+  "calls": [
+    {
+      "Hugo_Symbol": "KRAS",
+      "Variant_Classification": "Missense_Mutation",
+      "HGVSp_Short": "p.D33E",
+      "t_ref_count": "11",
+      "t_alt_count": "6",
+      "NCBI_Build": "GRCh37",
+      "Chromosome": "12",
+      "Start_Position": "25398220",
+      "Reference_Allele": "A",
+      "Tumor_Seq_Allele2": "T"
+    },
+    {
+      "Hugo_Symbol": "TP53",
+      "Variant_Classification": "Missense_Mutation",
+      "HGVSp_Short": "p.R273L",
+      "t_ref_count": "7",
+      "t_alt_count": "18",
+      "NCBI_Build": "GRCh37",
+      "Chromosome": "17",
+      "Start_Position": "7577120",
+      "Reference_Allele": "C",
+      "Tumor_Seq_Allele2": "A"
+    },
+    {
+      "Hugo_Symbol": "EGFR",
+      "Variant_Classification": "Missense_Mutation",
+      "HGVSp_Short": "p.S921R",
+      "t_ref_count": "94",
+      "t_alt_count": "14",
+      "NCBI_Build": "GRCh37",
+      "Chromosome": "7",
+      "Start_Position": "55266471",
+      "Reference_Allele": "C",
+      "Tumor_Seq_Allele2": "A"
+    }
+  ],
+  "drug_response_available": false,
+  "independent_model_validation": false,
+  "source_url": "https://www.cbioportal.org/study/summary?id=luad_tcga_pub",
+  "publication_url": "https://gdc.cancer.gov/about-data/publications/luad_2014",
+  "limitations": [
+    "Reported calls are not independently re-called or clinically confirmed.",
+    "The KRAS call has 17 reported reads (11 reference, 6 alternate); this demo does not certify sequencing quality.",
+    "Other_EGFR combines different variants and does not establish S921R-specific response.",
+    "The model was trained on cell lines; transfer to patient tissue is unvalidated.",
+    "No matched drug-response labels or clinical efficacy evaluation are available."
+  ],
+  "source_manifest": [
+    {
+      "file": "meta_study.txt",
+      "url": "https://raw.githubusercontent.com/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/meta_study.txt",
+      "bytes": 388,
+      "sha256": "e1b00b07f4c3a97245cb135fbcdf6a4945f46b55101410b5c8e7cd794d60ec3f"
+    },
+    {
+      "file": "meta_mutations.txt",
+      "url": "https://raw.githubusercontent.com/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/meta_mutations.txt",
+      "bytes": 320,
+      "sha256": "29e630e05991c83435fb7d1df806c1012db5f32f0e6bdc986db01c1aa81db0e1"
+    },
+    {
+      "file": "meta_gene_panel_matrix.txt",
+      "url": "https://raw.githubusercontent.com/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/meta_gene_panel_matrix.txt",
+      "bytes": 152,
+      "sha256": "e1c247b648aed7a4b827d7b837e3456341cf7ab47615a956d5d96dd253e6adb2"
+    },
+    {
+      "file": "LICENSE",
+      "url": "https://raw.githubusercontent.com/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/LICENSE",
+      "bytes": 446,
+      "sha256": "a290da9a9b7f53084667f3b21cc3b4fce4168f917994e7516a02dd0e44385d38"
+    },
+    {
+      "file": "cases_sequenced.txt",
+      "url": "https://raw.githubusercontent.com/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/case_lists/cases_sequenced.txt",
+      "bytes": 3925,
+      "sha256": "b644b532237edb5c9e96d54c3541f7aca0276ba6222bfea025ae920f6e6cc42c"
+    },
+    {
+      "file": "data_gene_panel_matrix.txt",
+      "url": "https://media.githubusercontent.com/media/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/data_gene_panel_matrix.txt",
+      "bytes": 6487,
+      "sha256": "943be15efdecf0328328911486037e16192312a23d155f94714da7d7a53dac76"
+    },
+    {
+      "file": "data_mutations.txt",
+      "url": "https://media.githubusercontent.com/media/cBioPortal/datahub/86690e1ed9752b1dcd50b5657f5f05eafa4b6b78/public/luad_tcga_pub/data_mutations.txt",
+      "bytes": 183489918,
+      "sha256": "d88d3e483f97b57abeae548531bec26c5bd4c3c9e89ee76e37ee2ec822e5b6be"
+    }
+  ]
+}

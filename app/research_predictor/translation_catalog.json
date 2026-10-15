@@ -1,0 +1,757 @@
+[
+  [
+    "predict",
+    "تجربة التنبؤ",
+    "Prediction workspace"
+  ],
+  [
+    "understand",
+    "فهم النموذج",
+    "Understand the model"
+  ],
+  [
+    "evidence",
+    "الأداء وحدود الدليل",
+    "Performance & evidence"
+  ],
+  [
+    "history",
+    "سجل التجارب",
+    "Experiment history"
+  ],
+  [
+    "researchBanner",
+    "نسخة بحثية استكشافية · البيانات من خطوط خلايا مختبرية · ليست للاستخدام السريري",
+    "Exploratory research MVP · Laboratory cell-line data · Not for clinical use"
+  ],
+  [
+    "platform",
+    "منصة استكشاف الاستجابة الدوائية",
+    "Drug-response research platform"
+  ],
+  [
+    "start",
+    "ابدأ التجربة",
+    "Start exploring"
+  ],
+  [
+    "navigation",
+    "أقسام المنصة",
+    "Platform navigation"
+  ],
+  [
+    "menu",
+    "القائمة",
+    "Menu"
+  ],
+  [
+    "close",
+    "إغلاق",
+    "Close"
+  ],
+  [
+    "overview",
+    "نظرة عامة",
+    "Overview"
+  ],
+  [
+    "heroTitle",
+    "استكشف الطفرات.\nافهم توقع النموذج.",
+    "Explore mutations.\nUnderstand the prediction."
+  ],
+  [
+    "heroLead",
+    "مساحة بحثية تربط الخصائص الجينية بتوقعات IC50 للأدوية الثلاثة، وتتيح فحص النتائج وتفسيرها وتتبع كل تجربة.",
+    "A research workspace connecting genomic features to IC50 predictions for three drugs, with transparent explanations and traceable experiments."
+  ],
+  [
+    "heroTag",
+    "NSCLC · EGFR · IC50",
+    "NSCLC · EGFR · IC50"
+  ],
+  [
+    "loadDemo",
+    "جرّب حالة افتراضية",
+    "Try a demo profile"
+  ],
+  [
+    "reviewEvidence",
+    "راجع دليل النموذج",
+    "Explore the evidence"
+  ],
+  [
+    "heroFoot",
+    "النموذج يصف قياسًا مختبريًا؛ لا يختار علاجًا لمريض.",
+    "The model describes a laboratory assay; it does not select a patient's treatment."
+  ],
+  [
+    "workspaceTitle",
+    "من ملف جيني إلى نتيجة قابلة للفحص",
+    "From a genomic profile to an inspectable result"
+  ],
+  [
+    "workspaceLead",
+    "اختر حالة مكتملة المعلومات، شغّل النموذج، ثم راجع التوقع والتفسير.",
+    "Choose a complete profile, run the model, then inspect the prediction and its explanation."
+  ],
+  [
+    "genomicInputs",
+    "المدخلات الجينية",
+    "Genomic inputs"
+  ],
+  [
+    "inputsNote",
+    "حالات مكتملة المعلومات فقط. لا تستقبل هذه النسخة ملفات مرضى أو بيانات سريرية.",
+    "Complete profiles only. This version does not accept patient files or clinical data."
+  ],
+  [
+    "loadCell",
+    "تحميل خلية من الدراسة",
+    "Load a study cell line"
+  ],
+  [
+    "manual",
+    "مدخلات بحثية يدوية",
+    "Manual research profile"
+  ],
+  [
+    "trainingSource",
+    "خلية أصلية من التدريب",
+    "Original training cell"
+  ],
+  [
+    "syntheticSource",
+    "حالة افتراضية للعرض، ليست من TCGA",
+    "Synthetic demonstration, not a TCGA case"
+  ],
+  [
+    "source",
+    "مصدر الحالة",
+    "Profile source"
+  ],
+  [
+    "mutationStatus",
+    "حالة طفرة {gene}",
+    "{gene} mutation status"
+  ],
+  [
+    "chooseKnown",
+    "اختر الحالة المعروفة",
+    "Select the known status"
+  ],
+  [
+    "mutated",
+    "توجد طفرة",
+    "Mutation present"
+  ],
+  [
+    "notMutated",
+    "لا توجد طفرة",
+    "Mutation absent"
+  ],
+  [
+    "egfrType",
+    "نوع طفرة EGFR",
+    "EGFR variant type"
+  ],
+  [
+    "exon19",
+    "حذف Exon 19",
+    "Exon 19 deletion"
+  ],
+  [
+    "otherEgfr",
+    "طفرة أخرى في EGFR",
+    "Other EGFR variant"
+  ],
+  [
+    "c797sUnsupported",
+    "C797S غير مدعومة لغيابها من التدريب.",
+    "C797S is unsupported because it was absent from training."
+  ],
+  [
+    "run",
+    "احسب التوقع البحثي",
+    "Run research prediction"
+  ],
+  [
+    "running",
+    "جارٍ الحساب والحفظ…",
+    "Calculating and saving…"
+  ],
+  [
+    "editNote",
+    "تعديل المدخلات يلغي النتيجة السابقة. السجل خاص بهذا المتصفح، ولا تتوفر درجة ثقة فردية معتمدة.",
+    "Editing inputs clears the previous result. History stays in this browser. No validated individual confidence score is available."
+  ],
+  [
+    "missingStatus",
+    "اختر حالة كل جين؛ البيانات المجهولة لا تعني عدم وجود طفرة.",
+    "Select the status of every gene. Unknown information does not mean a mutation is absent."
+  ],
+  [
+    "missingVariant",
+    "حدد نوع طفرة EGFR لإكمال المدخلات.",
+    "Select the EGFR variant type to complete the profile."
+  ],
+  [
+    "emptyTitle",
+    "كل نتيجة تبدأ بمدخلات واضحة",
+    "Every result starts with a clear profile"
+  ],
+  [
+    "emptyLead",
+    "اختر حالة كل جين ثم شغّل التنبؤ لعرض IC50 للأدوية الثلاثة وتفسير كل نتيجة.",
+    "Select each gene's status and run the prediction to see IC50 estimates and an explanation for each drug."
+  ],
+  [
+    "assayTitle",
+    "ما الذي يتنبأ به النموذج؟",
+    "What does the model predict?"
+  ],
+  [
+    "assayText",
+    "تركيز الدواء الموافق لحيوية 50% في بيانات الاختبار المختبري. نتعلم LN_IC50 ثم نعرض التحويل إلى µM.",
+    "The drug concentration corresponding to 50% viability in the laboratory assay. The model predicts LN_IC50, then converts it to µM."
+  ],
+  [
+    "saved",
+    "اكتمل الحساب وحُفظت التجربة",
+    "Prediction calculated and saved"
+  ],
+  [
+    "results",
+    "توقعات الأدوية الثلاثة",
+    "Three-drug predictions"
+  ],
+  [
+    "rankNote",
+    "الأقل IC50 يأتي أولًا في هذا الاختبار؛ الترتيب ليس تفضيلًا علاجيًا.",
+    "Lower IC50 ranks first within this assay. This ranking is not a treatment preference."
+  ],
+  [
+    "drug",
+    "الدواء",
+    "Drug"
+  ],
+  [
+    "rank",
+    "الترتيب البحثي",
+    "Research rank"
+  ],
+  [
+    "sensitivity",
+    "حساسية / مقاومة",
+    "Sensitive / resistant"
+  ],
+  [
+    "unavailable",
+    "غير متاح",
+    "Unavailable"
+  ],
+  [
+    "thresholdNote",
+    "تصنيف الحساسية والمقاومة مؤجل حتى اعتماد عتبات متوافقة مع البيانات.",
+    "Sensitive/resistant classification is deferred until compatible thresholds are approved."
+  ],
+  [
+    "localTitle",
+    "لماذا أعطى النموذج هذا التوقع؟",
+    "Why did the model produce this prediction?"
+  ],
+  [
+    "localText",
+    "SHAP خطي تدخلي: مساهمة كل ميزة في حساب LN_IC50 مقارنة بمتوسط خلايا التدريب. تفسير لحساب النموذج، وليس إثباتًا للسبب البيولوجي.",
+    "Exact interventional linear SHAP explains each feature's contribution to LN_IC50 relative to the training background. It explains the model's calculation, not biological causation."
+  ],
+  [
+    "localPlot",
+    "مساهمات SHAP المحلية في توقع LN_IC50",
+    "Local SHAP contributions to predicted LN_IC50"
+  ],
+  [
+    "globalPlot",
+    "أهمية الميزات حسب متوسط القيمة المطلقة لـSHAP",
+    "Feature importance by mean absolute SHAP"
+  ],
+  [
+    "lowers",
+    "يخفض التوقع",
+    "Lowers prediction"
+  ],
+  [
+    "raises",
+    "يرفع التوقع",
+    "Raises prediction"
+  ],
+  [
+    "details",
+    "تفاصيل التفسير وحدوده",
+    "Explanation details & limitations"
+  ],
+  [
+    "shapLimits",
+    "الخلفية 83 خلية تدريب. ترابط رايات EGFR واتساقها يحدان من تفسير المساهمات منفردة. مساهمة C797S الصفرية لا تثبت عدم تأثيرها بيولوجيًا.",
+    "The background contains 83 training cells. Correlated and logically linked EGFR flags limit individual attribution. A zero C797S contribution does not establish absence of a biological effect."
+  ],
+  [
+    "feature",
+    "الميزة",
+    "Feature"
+  ],
+  [
+    "input",
+    "المدخل",
+    "Input"
+  ],
+  [
+    "contribution",
+    "مساهمة SHAP في LN_IC50",
+    "SHAP contribution in LN_IC50"
+  ],
+  [
+    "openReport",
+    "فتح التقرير للطباعة",
+    "Open printable report"
+  ],
+  [
+    "csv",
+    "تنزيل CSV",
+    "Download CSV"
+  ],
+  [
+    "json",
+    "تنزيل JSON مع التفسير",
+    "Download JSON with explanations"
+  ],
+  [
+    "runId",
+    "معرف التجربة",
+    "Experiment ID"
+  ],
+  [
+    "version",
+    "إصدار النموذج",
+    "Model version"
+  ],
+  [
+    "savedTime",
+    "وقت الحفظ UTC",
+    "Saved time, UTC"
+  ],
+  [
+    "understandTitle",
+    "المعلومات وراء كل توقع",
+    "The information behind each prediction"
+  ],
+  [
+    "understandLead",
+    "ثماني رايات جينية ونموذج Ridge محفوظ. العمر والمرحلة واسم الخلية ليست مدخلات للنموذج.",
+    "Eight genomic flags and a frozen Ridge model. Age, disease stage and cell-line name are not model inputs."
+  ],
+  [
+    "globalTitle",
+    "التفسير العام",
+    "Global explanation"
+  ],
+  [
+    "globalText",
+    "متوسط القيمة المطلقة لـSHAP على خلايا التدريب الـ83. يوضح استخدام النموذج للميزة، وليس أهميتها الطبية أو جودة التنبؤ.",
+    "Mean absolute SHAP over the 83 training cells. It describes how the model uses a feature, not its clinical importance or prediction quality."
+  ],
+  [
+    "coverageTitle",
+    "تغطية الطفرات في التدريب",
+    "Mutation coverage in training"
+  ],
+  [
+    "coverageNote",
+    "L858R وحذف Exon 19 وT790M قليلة جدًا، وC797S غير موجودة. لا ندعي أداءً مستقلاً لهذه الأنواع.",
+    "L858R, Exon 19 deletion and T790M are very rare; C797S is absent. Independent performance for these variants has not been established."
+  ],
+  [
+    "methodTitle",
+    "طريقة SHAP ومصدرها",
+    "SHAP method & reference"
+  ],
+  [
+    "methodText",
+    "الصيغة الدقيقة: المعامل × (قيمة الميزة − متوسط خلفية التدريب). تحققنا من الجمع إلى التوقع ومن القيم بحساب Shapley مستقل للأدوية الثلاثة.",
+    "Exact formula: coefficient × (feature value − training-background mean). Additivity and values were checked against independent Shapley coalition enumeration for all three drugs."
+  ],
+  [
+    "methodLink",
+    "توثيق LinearExplainer",
+    "LinearExplainer documentation"
+  ],
+  [
+    "evidenceTitle",
+    "أداء واضح. وحدود واضحة.",
+    "Transparent performance. Clear limitations."
+  ],
+  [
+    "evidenceLead",
+    "هذه نتائج تقييم الدراسة الأصلية، وليست إعادة تدريب داخل المنصة. التقييم يحجب الخلية وأدويتها معًا.",
+    "These are the original study's evaluation results, not training performed in the platform. Each held-out cell and its drugs remain together."
+  ],
+  [
+    "cellCount",
+    "خلية تدريب مستقلة",
+    "Independent training cells"
+  ],
+  [
+    "targetCount",
+    "هدفًا عبر ثلاثة أدوية",
+    "Targets across three drugs"
+  ],
+  [
+    "outsideCount",
+    "قيمة فوق أعلى جرعة مختبرة",
+    "Values above the highest tested dose"
+  ],
+  [
+    "comparison",
+    "مقارنة التقييم الداخلي",
+    "Internal evaluation comparison"
+  ],
+  [
+    "path",
+    "المسار الأصلي",
+    "Original model path"
+  ],
+  [
+    "meanBaseline",
+    "خط الأساس: متوسط كل دواء",
+    "Baseline: drug-wise mean"
+  ],
+  [
+    "originalRidge",
+    "Ridge الأصلي",
+    "Original Ridge"
+  ],
+  [
+    "topAgreement",
+    "تطابق الدواء الأدنى IC50",
+    "Lowest-IC50 drug agreement"
+  ],
+  [
+    "metricNote",
+    "الخطأ على LN_IC50؛ الأصغر أفضل. تطابق ترتيب الدواء ليس نسبة ثقة أو نجاحًا علاجيًا.",
+    "Errors are measured on LN_IC50; lower is better. Drug-ranking agreement is not a confidence score or treatment success rate."
+  ],
+  [
+    "developmentTitle",
+    "محاولة التطوير الأخيرة",
+    "Latest development experiment"
+  ],
+  [
+    "developmentText",
+    "جولة النوتبوك أضافت هندسة ميزات وضبط معاملات. التحسن الداخلي نحو 1.07% ولم يجتز المعيار المسبق؛ بقي النموذج الأصلي نسخة العرض.",
+    "The notebook experiment added feature engineering and parameter tuning. The internal improvement was approximately 1.07% and did not meet the predefined criterion; the original model remains the demonstration version."
+  ],
+  [
+    "provesTitle",
+    "ماذا تثبت هذه النسخة؟",
+    "What does this MVP demonstrate?"
+  ],
+  [
+    "provesText",
+    "تثبت عمل مسار المدخلات والتنبؤ والتفسير والحفظ. لم يثبت اعتماد النموذج لاختيار علاج لمريض.",
+    "It demonstrates a working input, prediction, explanation and record-saving workflow. It does not establish suitability for selecting a patient's treatment."
+  ],
+  [
+    "pendingTitle",
+    "المتبقي من الخطة الأصلية",
+    "Remaining original-scope items"
+  ],
+  [
+    "pendingText",
+    "المتبقي: الفيديو النهائي ومراجعة مواد التسليم. مقارنة XGBoost وحالة العرض الموثقة اكتملتا؛ الاعتماد السريري غير مثبت.",
+    "Remaining: final demonstration video and delivery-material review. The XGBoost comparison and documented demonstration case are complete; clinical validity remains unestablished."
+  ],
+  [
+    "fingerprints",
+    "الإصدار وبصمات المصادر",
+    "Version & source fingerprints"
+  ],
+  [
+    "historyTitle",
+    "كل تجربة لها سجل",
+    "Every experiment has a record"
+  ],
+  [
+    "historyLead",
+    "تُحفظ المدخلات والتوقعات والتفسير والإصدار والوقت محليًا. تجارب الاستخدام لا تعد عينات تحقق مستقلة.",
+    "Inputs, predictions, explanations, model version and time are saved locally. Usage experiments are not independent validation samples."
+  ],
+  [
+    "time",
+    "وقت التجربة",
+    "Experiment time"
+  ],
+  [
+    "identifier",
+    "المعرف",
+    "Identifier"
+  ],
+  [
+    "result",
+    "النتيجة",
+    "Result"
+  ],
+  [
+    "openResult",
+    "فتح النتيجة",
+    "Open result"
+  ],
+  [
+    "emptyHistory",
+    "لا توجد تجارب محفوظة بعد. ابدأ من شاشة تجربة التنبؤ.",
+    "No experiments have been saved yet. Start from the prediction workspace."
+  ],
+  [
+    "historyNote",
+    "تُحفظ أحدث 30 تجربة في هذا المتصفح فقط. مسح بيانات الموقع يحذفها؛ نزّل نسخة من النتائج المهمة.",
+    "The latest 30 experiments stay in this browser only. Clearing site data removes them. Export important results."
+  ],
+  [
+    "loading",
+    "جارٍ التحقق من النموذج ومصادر البيانات…",
+    "Checking the model and data sources…"
+  ],
+  [
+    "footer",
+    "OncoPredict Nexus · منصة بحثية لاستكشاف استجابة الدواء",
+    "OncoPredict Nexus · Drug-response research workspace"
+  ],
+  [
+    "previous",
+    "مستكشف الدراسة السابق",
+    "Previous study explorer"
+  ],
+  [
+    "feature0",
+    "وجود طفرة EGFR",
+    "EGFR mutation presence"
+  ],
+  [
+    "feature1",
+    "وجود طفرة TP53",
+    "TP53 mutation presence"
+  ],
+  [
+    "feature2",
+    "وجود طفرة KRAS",
+    "KRAS mutation presence"
+  ],
+  [
+    "feature3",
+    "L858R",
+    "L858R"
+  ],
+  [
+    "feature4",
+    "حذف Exon 19",
+    "Exon 19 deletion"
+  ],
+  [
+    "feature5",
+    "T790M",
+    "T790M"
+  ],
+  [
+    "feature6",
+    "C797S",
+    "C797S"
+  ],
+  [
+    "feature7",
+    "طفرات EGFR أخرى",
+    "Other EGFR variants"
+  ],
+  [
+    "notValidation",
+    "هذه تجربة للنموذج المحفوظ وليست اختبارًا مستقلاً جديدًا.",
+    "This is an experiment with the saved model, not an independent validation test."
+  ],
+  [
+    "trainingPattern",
+    "هذا النمط الجيني ظهر في {count} خلية تدريب؛ تطابق النمط لا يعني تطابق الاستجابة.",
+    "This genomic pattern appeared in {count} training {cellWord}; matching the pattern does not imply matching the response."
+  ],
+  [
+    "unseenPattern",
+    "هذا النمط لم يظهر في التدريب؛ التوقع استقراء بحثي غير متحقق.",
+    "This pattern was not observed in training; the prediction is unvalidated research extrapolation."
+  ],
+  [
+    "rareVariant",
+    "الميزة {variant} ظهرت في {count} خلية فقط؛ لا تكفي لإثبات أداء مستقل لهذا النوع.",
+    "The {variant} feature occurred in only {count} {cellWord}; independent performance for this variant has not been established."
+  ],
+  [
+    "limit0",
+    "النموذج استكشافي، والنتائج ليست توصية علاج لمريض.",
+    "The model is exploratory; these results are not a treatment recommendation for a patient."
+  ],
+  [
+    "limit1",
+    "218 من 249 قيمة IC50 منشورة فوق أعلى جرعة مختبرة.",
+    "218 of 249 published IC50 values exceed the highest tested dose."
+  ],
+  [
+    "limit2",
+    "التفسير يشرح حساب النموذج، ولا يثبت تأثيرًا سببيًا للطفرات.",
+    "The explanation describes the model's calculation; it does not establish a causal effect of mutations."
+  ],
+  [
+    "limit3",
+    "المساهمات على LN_IC50 وتفترض تفسيرًا تدخليًا؛ ترابط رايات EGFR يحدّ من تفسير كل راية وحدها.",
+    "Contributions are on LN_IC50 under an interventional interpretation; correlated EGFR flags limit individual attribution."
+  ],
+  [
+    "limit4",
+    "لا تتوفر عتبات حساسية ومقاومة معتمدة، ولا درجة ثقة فردية.",
+    "Validated sensitive/resistant thresholds and individual confidence scores are unavailable."
+  ],
+  [
+    "reportTitle",
+    "تقرير تجربة بحثية",
+    "Research prediction report"
+  ],
+  [
+    "print",
+    "طباعة / حفظ PDF",
+    "Print / save PDF"
+  ],
+  [
+    "profile",
+    "الملف الجيني",
+    "Genomic profile"
+  ],
+  [
+    "gene",
+    "الجين",
+    "Gene"
+  ],
+  [
+    "status",
+    "الحالة",
+    "Status"
+  ],
+  [
+    "cell",
+    "الخلية",
+    "Cell line"
+  ],
+  [
+    "noCell",
+    "حالة بحثية دون معرف خلية",
+    "Research profile without a cell-line identifier"
+  ],
+  [
+    "noVariant",
+    "لا تنطبق؛ لا توجد طفرة EGFR",
+    "Not applicable; EGFR mutation absent"
+  ],
+  [
+    "baseValue",
+    "القيمة المرجعية LN_IC50",
+    "Baseline LN_IC50"
+  ],
+  [
+    "limitations",
+    "حدود النتيجة",
+    "Result limitations"
+  ],
+  [
+    "modelHash",
+    "بصمة النموذج",
+    "Model fingerprint"
+  ],
+  [
+    "predictionRole",
+    "دور التوقع: نموذج ملائم على كامل بيانات التدريب؛ ليس تحققًا مستقلاً",
+    "Prediction role: model refitted on all training cells; not independent validation"
+  ],
+  [
+    "fetchError",
+    "تعذر قراءة استجابة الخدمة. تحقق من تشغيل البرنامج.",
+    "The service response could not be read. Check that the application is running."
+  ],
+  [
+    "requestError",
+    "تعذر إكمال الطلب. تحقق من اكتمال المدخلات وجاهزية الخدمة.",
+    "The request could not be completed. Check the profile and service availability."
+  ],
+  [
+    "globalData",
+    "عرض قيم التفسير العام في جدول",
+    "View global explanation values as a table"
+  ],
+  [
+    "meanShap",
+    "متوسط القيمة المطلقة لـSHAP",
+    "Mean absolute SHAP"
+  ],
+  [
+    "xgbTitle",
+    "مقارنة XGBoost: اكتملت",
+    "XGBoost comparison: completed"
+  ],
+  [
+    "xgbText",
+    "أُجريت مقارنة محدودة على الميزات وتقسيمات التقييم نفسها. RMSE لـRidge هو 1.532 ولـXGBoost هو 1.578؛ لم تدعم المقارنة استبدال النموذج الحالي. هذا لا يثبت تفوق Ridge على كل إعداد ممكن لـXGBoost.",
+    "A bounded comparison used the same features and evaluation folds. Ridge RMSE was 1.532 and XGBoost RMSE was 1.578; the comparison did not support replacing the current model. This does not establish Ridge superiority over every possible XGBoost configuration."
+  ],
+  [
+    "tcgaLoad",
+    "تحميل حالة TCGA موثقة",
+    "Load documented TCGA case"
+  ],
+  [
+    "tcgaSource",
+    "حالة TCGA عامة للعرض فقط",
+    "Public TCGA case · demonstration only"
+  ],
+  [
+    "tcgaTitle",
+    "حالة العرض الموثقة من TCGA",
+    "Documented TCGA demonstration"
+  ],
+  [
+    "tcgaWarning",
+    "طفرات مسجلة في المصدر لم نؤكدها سريريًا. لا توجد قياسات استجابة دوائية مطابقة؛ نقل النموذج من الخلايا إلى نسيج المريض غير مثبت. طفرة KRAS مسجلة بعمق 17 قراءة فقط؛ لا نُقر جودة التسلسل أو استجابة خاصة لـS921R.",
+    "Reported mutations have not been independently or clinically confirmed. There are no matched drug-response measurements; transfer from cell lines to patient tissue is unvalidated. The KRAS call has only 17 reported reads; this demo does not certify sequencing quality or S921R-specific response."
+  ],
+  [
+    "tcgaReadSource",
+    "مراجعة مصدر الحالة",
+    "Review case source"
+  ],
+  [
+    "tcgaReady",
+    "أضيفت حالة عامة موثقة من TCGA لعرض المسار التقني، وليست تحققًا من الدقة أو فائدة العلاج.",
+    "A documented public TCGA case demonstrates the workflow, not prediction accuracy or treatment benefit."
+  ],
+  [
+    "proteinCall",
+    "الطفرة المسجلة",
+    "Reported protein call"
+  ],
+  [
+    "callClassification",
+    "تصنيف الطفرة",
+    "Variant classification"
+  ],
+  [
+    "readCounts",
+    "قراءات المرجع / البديل",
+    "Reference / alternate reads"
+  ],
+  [
+    "dataRevision",
+    "إصدار DataHub المثبت",
+    "Pinned DataHub commit"
+  ]
+]

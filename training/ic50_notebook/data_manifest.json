@@ -1,0 +1,12 @@
+{
+  "origin": "outputs/ic50_exploratory",
+  "scope": "83 NSCLC cells, three LN_IC50 targets, frozen copies",
+  "sha256": {
+    "cell_features_83.csv": "ddf5647d324b2493512214faf7ceaeb87bd4275db3b98e187352ca0ceeada1ab",
+    "targets_wide_83.csv": "29a9263be80dc0c9d630a9efd9d3856440f335d64eb506c0c9632213326efbf3",
+    "modeling_table_249.csv": "443668132a05ed53a57be5d7c23330454d4b5307caa99e8f63185a980f11a192",
+    "fold_assignments.csv": "ea5c55e59bf697c059f414f6b25b1468c3fd65f4f7b6ecd153a034700e27c58a",
+    "held_out_predictions.csv": "4aaab86d9f7676411f213f02a0971af174fbbc2bc504c3004718bba67aa0729b",
+    "run_summary.json": "a129cb4fdacb4cd0e0bc247495b85c3ec2b73612263585928f575d9ad3809f46"
+  }
+}

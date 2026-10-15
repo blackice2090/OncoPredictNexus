@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {profileFromForm,formFromProfile,revisionAfterEdit} from './state.js';
+test('unknown mutations never become false',()=>{assert.throws(()=>profileFromForm({egfr:'',tp53:'no',kras:'no',variants:[]}));assert.throws(()=>profileFromForm({egfr:'yes',tp53:'no',kras:'no',variants:[]}));});
+test('known profile round trips with double variant',()=>{const p={egfr_mutated:true,tp53_mutated:false,kras_mutated:true,egfr_variants:['L858R','T790M']};assert.deepEqual(profileFromForm(formFromProfile(p)),p);});
+test('editing invalidates stale output and training identity',()=>{assert.deepEqual(revisionAfterEdit({result:{id:1},source:'original_training_cell',cellId:'SIDM',form:{}}),{result:null,source:'manual_research_profile',cellId:null,proxyId:null,provenance:null,form:{}});});
+test('editing TCGA proxy clears its verified identity and provenance',()=>{const revised=revisionAfterEdit({form:{},source:'tcga_demo_proxy',proxyId:'TCGA-case',provenance:{id:'TCGA-case'},result:{}});assert.equal(revised.source,'manual_research_profile');assert.equal(revised.proxyId,null);assert.equal(revised.provenance,null);assert.equal(revised.result,null);});

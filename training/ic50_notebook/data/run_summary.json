@@ -1,0 +1,249 @@
+{
+  "date": "2026-10-02",
+  "status": "exploratory_training_and_internal_evaluation_completed",
+  "approved_scope": "83 NSCLC cells, continuous LN_IC50, auxiliary variants, no S/R thresholds",
+  "validation": "3 repeats of 5-fold cell-wise outer CV; 4-fold inner tuning; 83 wide rows",
+  "random_seeds": [
+    42,
+    137,
+    2026
+  ],
+  "checks": {
+    "unique_cells": 83,
+    "response_rows": 249,
+    "excluded_cells": 5,
+    "no_cell_overlap_in_outer_or_inner_partitions": true,
+    "OOF_predictions_per_cell_drug_model": 3,
+    "input_features": [
+      "EGFR_mutation_present",
+      "TP53_mutation_present",
+      "KRAS_mutation_present",
+      "L858R",
+      "Exon19_deletion",
+      "T790M",
+      "C797S",
+      "Other_EGFR"
+    ],
+    "response_derived_features_used": [],
+    "threshold_labels_created": false,
+    "mutation_flags_cross_checked_against_calls": true,
+    "sources_directory_modified": false
+  },
+  "metrics": {
+    "drug_mean_baseline": {
+      "pooled_RMSE_LN_IC50": 1.6827708525820813,
+      "pooled_MAE_LN_IC50": 1.2586898523516652,
+      "mean_top1_accuracy": 0.7951807228915663,
+      "mean_pairwise_concordance": 0.8032128514056224,
+      "per_drug": {
+        "Osimertinib": {
+          "RMSE_LN_IC50": 1.782523188297164,
+          "MAE_LN_IC50": 1.3481668050383353,
+          "R2_LN_IC50": -0.06086611909252385,
+          "Spearman": -0.28360647195309135
+        },
+        "Erlotinib": {
+          "RMSE_LN_IC50": 1.710546032878561,
+          "MAE_LN_IC50": 1.3295368529250426,
+          "R2_LN_IC50": -0.06402481338457895,
+          "Spearman": -0.29606711912890354
+        },
+        "Gefitinib": {
+          "RMSE_LN_IC50": 1.5463659103333975,
+          "MAE_LN_IC50": 1.0983658990916172,
+          "R2_LN_IC50": -0.0531927582093917,
+          "Spearman": -0.2537473337492755
+        }
+      }
+    },
+    "ridge": {
+      "pooled_RMSE_LN_IC50": 1.5319177091091982,
+      "pooled_MAE_LN_IC50": 1.161410579162414,
+      "mean_top1_accuracy": 0.7871485943775101,
+      "mean_pairwise_concordance": 0.7965194109772423,
+      "per_drug": {
+        "Osimertinib": {
+          "RMSE_LN_IC50": 1.5541336720358894,
+          "MAE_LN_IC50": 1.1867906155411874,
+          "R2_LN_IC50": 0.19335383579890353,
+          "Spearman": 0.28710058175985315
+        },
+        "Erlotinib": {
+          "RMSE_LN_IC50": 1.5705665705804446,
+          "MAE_LN_IC50": 1.2115334467043697,
+          "R2_LN_IC50": 0.10296534321972277,
+          "Spearman": 0.16620865278169902
+        },
+        "Gefitinib": {
+          "RMSE_LN_IC50": 1.4681773715776238,
+          "MAE_LN_IC50": 1.0859076752416852,
+          "R2_LN_IC50": 0.04992681271490962,
+          "Spearman": 0.1904964582937236
+        }
+      }
+    },
+    "random_forest": {
+      "pooled_RMSE_LN_IC50": 1.560912634262941,
+      "pooled_MAE_LN_IC50": 1.1855009311403844,
+      "mean_top1_accuracy": 0.7951807228915663,
+      "mean_pairwise_concordance": 0.8032128514056224,
+      "per_drug": {
+        "Osimertinib": {
+          "RMSE_LN_IC50": 1.6037112914834362,
+          "MAE_LN_IC50": 1.2297302241415367,
+          "R2_LN_IC50": 0.14130173353488465,
+          "Spearman": 0.233526419488196
+        },
+        "Erlotinib": {
+          "RMSE_LN_IC50": 1.6129466925494915,
+          "MAE_LN_IC50": 1.2411322225225592,
+          "R2_LN_IC50": 0.053934039160375424,
+          "Spearman": 0.10692646035552837
+        },
+        "Gefitinib": {
+          "RMSE_LN_IC50": 1.4613013678871587,
+          "MAE_LN_IC50": 1.0856403467570572,
+          "R2_LN_IC50": 0.05949470641009702,
+          "Spearman": 0.1153202549367503
+        }
+      }
+    },
+    "nested_selected": {
+      "pooled_RMSE_LN_IC50": 1.5319177091091982,
+      "pooled_MAE_LN_IC50": 1.161410579162414,
+      "mean_top1_accuracy": 0.7871485943775101,
+      "mean_pairwise_concordance": 0.7965194109772423,
+      "per_drug": {
+        "Osimertinib": {
+          "RMSE_LN_IC50": 1.5541336720358894,
+          "MAE_LN_IC50": 1.1867906155411874,
+          "R2_LN_IC50": 0.19335383579890353,
+          "Spearman": 0.28710058175985315
+        },
+        "Erlotinib": {
+          "RMSE_LN_IC50": 1.5705665705804446,
+          "MAE_LN_IC50": 1.2115334467043697,
+          "R2_LN_IC50": 0.10296534321972277,
+          "Spearman": 0.16620865278169902
+        },
+        "Gefitinib": {
+          "RMSE_LN_IC50": 1.4681773715776238,
+          "MAE_LN_IC50": 1.0859076752416852,
+          "R2_LN_IC50": 0.04992681271490962,
+          "Spearman": 0.1904964582937236
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "drug_mean_baseline": {
+      "cell_bootstrap_RMSE_95_interval": [
+        1.3714960303352646,
+        2.014161876656084
+      ],
+      "RMSE_improvement_over_baseline": 0.0,
+      "cell_bootstrap_improvement_95_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    "ridge": {
+      "cell_bootstrap_RMSE_95_interval": [
+        1.3127969770374028,
+        1.7475979013349283
+      ],
+      "RMSE_improvement_over_baseline": 0.15085314347288303,
+      "cell_bootstrap_improvement_95_interval": [
+        -0.041805927888397196,
+        0.338882701528431
+      ]
+    },
+    "random_forest": {
+      "cell_bootstrap_RMSE_95_interval": [
+        1.3199305748550112,
+        1.8018287825869228
+      ],
+      "RMSE_improvement_over_baseline": 0.12185821831914012,
+      "cell_bootstrap_improvement_95_interval": [
+        -0.013895898057323885,
+        0.24948220437535504
+      ]
+    },
+    "nested_selected": {
+      "cell_bootstrap_RMSE_95_interval": [
+        1.3127969770374028,
+        1.7475979013349283
+      ],
+      "RMSE_improvement_over_baseline": 0.15085314347288303,
+      "cell_bootstrap_improvement_95_interval": [
+        -0.041805927888397196,
+        0.338882701528431
+      ]
+    }
+  },
+  "bootstrap_caveat": "Conditional cell bootstrap of existing OOF errors; no retraining, not external validation or individual prediction intervals.",
+  "assay_range_audit": [
+    {
+      "DRUG_NAME": "Erlotinib",
+      "n": 83,
+      "above_max": 66,
+      "below_min": 0,
+      "min_tested_uM": 0.002001,
+      "max_tested_uM": 10.0
+    },
+    {
+      "DRUG_NAME": "Gefitinib",
+      "n": 83,
+      "above_max": 77,
+      "below_min": 0,
+      "min_tested_uM": 0.002001,
+      "max_tested_uM": 2.0
+    },
+    {
+      "DRUG_NAME": "Osimertinib",
+      "n": 83,
+      "above_max": 75,
+      "below_min": 0,
+      "min_tested_uM": 0.001001,
+      "max_tested_uM": 1.0
+    }
+  ],
+  "refit_selected_family": "ridge",
+  "refit_parameters": {
+    "model__alpha": 1.0
+  },
+  "full_data_inner_cv_MSE": {
+    "drug_mean_baseline": 2.7296575153590226,
+    "ridge": 2.126815534216614,
+    "random_forest": 2.238894372172847
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "scipy": "1.18.1"
+  },
+  "input_manifest": {
+    "coverage_matrix_sanger_level.csv": {
+      "path": "C:\\Users\\obaid\\.codex\\.chatgpt-projects\\g-p-6aa18b8015088191bed95cfaa3e582e6\\outputs\\gate1_audit\\coverage_matrix_sanger_level.csv",
+      "sha256": "0ddd7819f33bee55e4e2d21dc9413875ed39dfa9c8a1e1445d93a4f860d232a9"
+    },
+    "gdsc_target_drug_rows.csv": {
+      "path": "C:\\Users\\obaid\\.codex\\.chatgpt-projects\\g-p-6aa18b8015088191bed95cfaa3e582e6\\outputs\\gate1_audit\\gdsc_target_drug_rows.csv",
+      "sha256": "d6f7a06a9393a9e09bed29bcd86d9a70b327ce42a049219d10b5933587dfd46c"
+    },
+    "target_gene_variant_calls.csv": {
+      "path": "C:\\Users\\obaid\\.codex\\.chatgpt-projects\\g-p-6aa18b8015088191bed95cfaa3e582e6\\outputs\\gate1_audit\\target_gene_variant_calls.csv",
+      "sha256": "3603dc6d4fae8c2784fe56428ca9e57ca3f55677247ef838c82759254683de54"
+    },
+    "gate1_metrics.json": {
+      "path": "C:\\Users\\obaid\\.codex\\.chatgpt-projects\\g-p-6aa18b8015088191bed95cfaa3e582e6\\outputs\\gate1_audit\\gate1_metrics.json",
+      "sha256": "d8ef3abc58af77a9c39482768ff5c2ea6f3f3016be71f0bc557865509d69faa8"
+    },
+    "ic50_exploratory.py": {
+      "path": "C:\\Users\\obaid\\.codex\\.chatgpt-projects\\g-p-6aa18b8015088191bed95cfaa3e582e6\\work\\ic50_exploratory.py",
+      "sha256": "06b95c100b50b4e39180520a3921536b039ed34f5222bdd910b7c633ce104050"
+    }
+  }
+}

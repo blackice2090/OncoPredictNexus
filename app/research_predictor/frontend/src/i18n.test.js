@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {messages,translate,direction,profileWarnings,localizeError} from './i18n.js';
+test('both dictionaries cover exactly the same nonempty keys',()=>{assert.deepEqual(Object.keys(messages.ar).sort(),Object.keys(messages.en).sort());for(const lang of ['ar','en'])for(const value of Object.values(messages[lang]))assert.equal(typeof value,'string');});
+test('language direction and key text',()=>{assert.equal(direction('ar'),'rtl');assert.equal(direction('en'),'ltr');assert.equal(translate('en','predict'),'Prediction workspace');assert.equal(translate('ar','predict'),'تجربة التنبؤ');});
+test('warning language changes without changing response numbers',()=>{const r={pattern_training_count:2,profile:{egfr_variants:['L858R']},warnings:['رسالة'],warnings_codes:['training_pattern','rare_variant']};const copy=JSON.stringify(r);assert.match(profileWarnings(r,'en',{feature_counts:[13,71,30,2,3,1,0,8]}).join(' '),/2 training cells/);assert.equal(JSON.stringify(r),copy);});
+test('network failure has a useful message in both languages',()=>{for(const lang of ['ar','en'])assert.equal(localizeError(new Error('Failed to fetch'),lang),translate(lang,'fetchError'));});

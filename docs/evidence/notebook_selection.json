@@ -1,0 +1,13 @@
+{
+  "reference_RMSE": 1.5319177091091982,
+  "candidate_RMSE": 1.5156000247884565,
+  "delta_RMSE": 0.016317684320741765,
+  "relative_gain": 0.010651802132524736,
+  "conditional_95_interval": [
+    -0.01113584369968637,
+    0.050775563694719604
+  ],
+  "method": "paired cell bootstrap, repeats and drugs retained; no retraining",
+  "MAE_not_increased": true,
+  "predeclared_development_signal": false
+}

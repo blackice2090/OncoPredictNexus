@@ -1,0 +1,38 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci --prefix app/research_predictor/frontend",
+  "buildCommand": "npm run build --prefix app/research_predictor/frontend",
+  "outputDirectory": "app/research_predictor/frontend/dist",
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 30,
+      "includeFiles": "app/research_predictor/**",
+      "excludeFiles": "{app/research_predictor/frontend/**,app/research_predictor/tests/**,training/**,docs/**}"
+    }
+  },
+  "rewrites": [
+    {"source": "/health", "destination": "/api/index"},
+    {"source": "/model-info", "destination": "/api/index"},
+    {"source": "/cells", "destination": "/api/index"},
+    {"source": "/demo/tcga", "destination": "/api/index"},
+    {"source": "/explain/global", "destination": "/api/index"},
+    {"source": "/predict", "destination": "/api/index"},
+    {"source": "/runs", "destination": "/api/index"},
+    {"source": "/runs/:path*", "destination": "/api/index"},
+    {"source": "/openapi.json", "destination": "/api/index"},
+    {"source": "/docs", "destination": "/api/index"},
+    {"source": "/(.*)", "destination": "/index.html"}
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {"key": "X-Content-Type-Options", "value": "nosniff"},
+        {"key": "Referrer-Policy", "value": "no-referrer"},
+        {"key": "X-Frame-Options", "value": "DENY"},
+        {"key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=()"}
+      ]
+    }
+  ]
+}

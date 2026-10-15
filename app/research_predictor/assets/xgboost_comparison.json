@@ -1,0 +1,59 @@
+{
+  "status": "bounded_xgboost_comparison_completed",
+  "run_id": "xgb_20261013T071904_27bde2",
+  "runtime_seconds": 62.64514390000841,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "sklearn": "1.9.1",
+    "xgboost": "3.4.1"
+  },
+  "ridge_reproduction_max_abs": 4.440892098500626e-16,
+  "metrics": [
+    {
+      "candidate": "baseline",
+      "RMSE": 1.6827708525820813,
+      "MAE": 1.2586898523516652,
+      "mean_top1_no_tie": 0.7951807228915663
+    },
+    {
+      "candidate": "ridge",
+      "RMSE": 1.5319177091091982,
+      "MAE": 1.161410579162414,
+      "mean_top1_no_tie": 0.7871485943775101
+    },
+    {
+      "candidate": "xgboost",
+      "RMSE": 1.5783587092617115,
+      "MAE": 1.2020342246475169,
+      "mean_top1_no_tie": 0.7871485943775101
+    },
+    {
+      "candidate": "nested_selected",
+      "RMSE": 1.5319177091091982,
+      "MAE": 1.161410579162414,
+      "mean_top1_no_tie": 0.7871485943775101
+    }
+  ],
+  "comparison": {
+    "reference_RMSE": 1.5319177091091982,
+    "candidate_RMSE": 1.5783587092617115,
+    "delta_RMSE": -0.04644100015251329,
+    "relative_gain": -0.03031559716058017,
+    "conditional_95_interval": [
+      -0.14995832975682336,
+      0.0788389401251978
+    ],
+    "method": "paired cell bootstrap, repeats and drugs retained; no retraining",
+    "MAE_not_increased": false,
+    "development_signal": false
+  },
+  "decision_ar": "لم تتحقق إشارة تطوير XGBoost المحددة؛ يبقى Ridge نسخة المنصة، ونحفظ المقارنة كاملة.",
+  "original_assets_verified_unchanged": 46,
+  "training_snapshots_unchanged": true,
+  "model_replaced_in_platform": false,
+  "independent_validation": false,
+  "no_final_refit_artifact": true,
+  "figures": 3
+}

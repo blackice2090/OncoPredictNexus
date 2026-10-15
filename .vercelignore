@@ -1,0 +1,17 @@
+.git
+.github
+.venv
+.env
+.env.*
+**/node_modules
+**/__pycache__
+**/tests
+**/*.test.js
+training
+docs
+outputs
+sources
+work
+**/api_runtime
+**/notebook_runtime
+**/runtime

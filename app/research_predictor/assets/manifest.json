@@ -1,0 +1,34 @@
+{
+  "exploratory_model.joblib": {
+    "sha256": "049a37d94c50aca766da3ce0e103cbcf5dbbb696474a8627bea6087cd04a0acb",
+    "source": "outputs/ic50_exploratory/exploratory_model.joblib"
+  },
+  "cell_features_83.csv": {
+    "sha256": "ddf5647d324b2493512214faf7ceaeb87bd4275db3b98e187352ca0ceeada1ab",
+    "source": "outputs/ic50_exploratory/cell_features_83.csv"
+  },
+  "targets_wide_83.csv": {
+    "sha256": "29a9263be80dc0c9d630a9efd9d3856440f335d64eb506c0c9632213326efbf3",
+    "source": "outputs/ic50_exploratory/targets_wide_83.csv"
+  },
+  "run_summary.json": {
+    "sha256": "a129cb4fdacb4cd0e0bc247495b85c3ec2b73612263585928f575d9ad3809f46",
+    "source": "outputs/ic50_exploratory/run_summary.json"
+  },
+  "held_out_predictions.csv": {
+    "sha256": "4aaab86d9f7676411f213f02a0971af174fbbc2bc504c3004718bba67aa0729b",
+    "source": "outputs/ic50_exploratory/held_out_predictions.csv"
+  },
+  "modeling_table_249.csv": {
+    "sha256": "443668132a05ed53a57be5d7c23330454d4b5307caa99e8f63185a980f11a192",
+    "source": "outputs/ic50_exploratory/modeling_table_249.csv"
+  },
+  "xgboost_comparison.json": {
+    "sha256": "00bb6b7b922161bdd52c7d2bf152288bdf2e06524e71acc0ef8eb84d98e612eb",
+    "source": "training/xgboost_comparison/runs/xgb_20261013T071904_27bde2/summary.json"
+  },
+  "tcga_demo_proxy.json": {
+    "source": "outputs/tcga_proxy_20261013/tcga_demo_proxy.json",
+    "sha256": "3a5109d12c57e92c35d1b00b5ccc8e8bd765710878d945fac6011149452e18a3"
+  }
+}
